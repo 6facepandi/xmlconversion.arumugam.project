@@ -1,0 +1,79 @@
+.bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+	  position: fixed;
+	  width: 100%;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+.navbar-nav {
+  padding-top: 8px;
+}
+.navbar-nav>li {
+ margin-left: 10px;
+}
+.navbar-nav>li>a {
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+  
+[contenteditable] {
+  padding:4px 16px;
+  background:#eee;
+}
+[contenteditable]:focus {
+  outline-style: double;
+}
+
+.form-title {
+ color: black;
+ font-weight: bold;
+ font-size: 15px;
+ margin-bottom: 5px;
+}
+.text {
+ margin-bottom: 15px;
+}
+.form-wrapper {
+ padding-bottom: 20px;
+}
+.form-wrapper h2 {
+	border-bottom: 1px solid;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.form-group {
+  padding: 0 30px;
+}
+.container {
+ width: 100%;
+}
+.xml-view-wrapper {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.nav .hidden, .hidden {
+  display: none;
+}
+.overflowHide {
+ overflow: hidden;
+}
+i {
+ color: blue;
+}

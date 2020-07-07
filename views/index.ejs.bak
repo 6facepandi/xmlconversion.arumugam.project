@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+
+<div class="container-fluid bg-3">
+  <div class="form-container">
+    <div class="form-wrapper">
+      <h2>journal-meta</h2>
+      <div class="form-group">
+        <div class="form-title journal-id">Journal-id</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Journal-title</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Journal-title</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Journal-title</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">publication-format-print</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">publication-format-online</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">publisher-name</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">publisher-location</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+      <h2>Article-meta</h2>
+      <div class="form-group">
+        <div class="form-title">Article-id-DOI</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Article-id-Publisher</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Article-title</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Article-Subtitle</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">contrib-name</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">contrib-Surname</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">contrib-Bio</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">publish-year</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">copyright-statement</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">copyright-year</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Abstract</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Keywords</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+    </div>
+
+    <div class="form-wrapper" id="section_1">
+      <h2>Section</h2>
+      <div class="form-group">
+        <div class="form-title">Section Title</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Section Content</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Figure Label</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Figure Content</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="table-group">
+        <div class="form-group">
+          <div class="form-title">Table Label</div>
+          <div class="text" contenteditable="true"></div>
+        </div>
+        <div class="form-group">
+          <div class="form-title">Table Content</div>
+          <div class="text" contenteditable="true"></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrapper" id="reference_1">
+      <h2>References</h2>
+      <div class="form-group">
+        <div class="form-title">Surname</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Given name</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Year</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Article Title</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Source</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Volume</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Fpage</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Lpage</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Publisher Location</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">Publisher Name</div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+      <div class="form-group">
+        <div class="form-title">URI <small>(PDF link)</small></div>
+        <div class="text" contenteditable="true"></div>
+      </div>
+    </div>
+  </div>
+  <div class="xml-view-container hidden">
+    <textarea class="xml-view-wrapper">
+      <journal-meta>
+          <journal-id journal-id-type="publisher-id">ARMW</journal-id>
+          <journal-title-group>
+              <journal-title>Museum Worlds: Advances in Research</journal-title>
+          </journal-title-group>
+          <issn publication-format="print">2049-6729</issn>
+          <issn publication-format="online">2049-6737</issn>
+          <publisher>
+              <publisher-name>Berghahn Journals</publisher-name>
+              <publisher-loc>New York Oxford</publisher-loc>
+          </publisher>
+      </journal-meta>
+    </textarea>
+  </div>
+</div>
+
+</body>
+<% include partials/script %>
+</html>

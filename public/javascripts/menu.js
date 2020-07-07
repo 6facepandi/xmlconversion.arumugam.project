@@ -1,0 +1,83 @@
+$(document).ready(function(){
+  
+	var element = $('meta[name="active-menu"]').attr('content');
+	$('#' + element).addClass('active');
+
+  function formatDoc(thingtochange) {
+    
+  }
+  $('.intLink').on('click', function () {
+    var value = this.getAttribute('data-edit');
+    document.execCommand(value);
+    return false;
+  });
+
+  $(".form-container div[contenteditable]").on('keypress', function (evt) {
+    var keycode = evt.charCode || evt.keyCode;
+    if (keycode  == 13) { 
+    return false;
+    }
+  });
+
+  var x = 1;
+  if(x==1){
+    $('#remove_button').addClass('hidden');
+  }
+  $('#add_button').click(function(){
+    x++;
+      $("#section_"+(x-1)).after('<div class="form-wrapper" id="section_'+x+'"><h2>Section '+x+'</h2><div class="form-group"><div class="form-title">Section Title</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Section Content</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Figure Label</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Figure Content</div><div class="text" contenteditable="true"></div></div><div class="table-group"><div class="form-group"><div class="form-title">Table Label</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Table Content</div><div class="text" contenteditable="true"></div></div></div></div>');
+    
+    if(x>=1){
+      $('#remove_button').removeClass('hidden');
+    }
+  });
+  $('#remove_button').click(function(){
+      $('#section_'+x+'').remove();
+      x--;
+      if(x == 1){
+      $('#remove_button').addClass('hidden');
+    }
+  });
+
+  var m = 1;
+  if(m==1){
+    $('#remove_button_1').addClass('hidden');
+  }
+  $('#add_button_1').click(function(){
+    m++;
+    $("#reference_"+(m-1)).after('<div class="form-wrapper" id="reference_'+m+'"><h2>References '+m+'</h2><div class="form-group"><div class="form-title">Surname</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Given name</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Year</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Article Title</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Source</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Volume</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Fpage</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Lpage</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Publisher Location</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">Publisher Name</div><div class="text" contenteditable="true"></div></div><div class="form-group"><div class="form-title">URI <small>(PDF link)</small></div><div class="text" contenteditable="true"></div></div></div>');
+      
+    if(m>=1){
+      $('#remove_button_1').removeClass('hidden');
+    }
+  });
+  $('#remove_button_1').click(function(){
+      $('#reference_'+m+'').remove();
+      m--;
+      if(m == 1){
+      $('#remove_button_1').addClass('hidden');
+    }
+  });
+
+  //
+  
+  $('.viewxmlLink').click(function() {
+    var journalId = $('.journal-id').html();
+    alert(journalId);
+    $('.nav li').addClass('hidden');
+    $('.downloadxmlLink').removeClass('hidden');
+    $('.backForm').removeClass('hidden');
+    $('.form-container').addClass('hidden');
+    $('body').addClass('overflowHide');
+    $('.xml-view-container').removeClass('hidden');
+  });
+  
+  $('.backForm').click(function() {
+    $('.nav li').toggleClass('hidden');
+    (m==1) ? $('#remove_button_1').addClass('hidden') : $('#remove_button_1').removeClass('hidden');
+    (x==1) ? $('#remove_button').addClass('hidden') : $('#remove_button').removeClass('hidden');
+    $('.xml-view-container').addClass('hidden');
+    $('body').removeClass('overflowHide');
+    $('.form-container').removeClass('hidden');
+  });
+});
